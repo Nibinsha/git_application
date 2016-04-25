@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    
+        <p>The repositary of <h2>{{user}}</h2></p>
+        {% if reposi %}
+            {% for rep in reposi %}
+            <div class="post">
+                <p> repositary: {{ rep.name }}</p>
+            </div>
+                
+            {%endfor%}
+            <h3><a href="/">INDEX</a></h3>      
+        {% endif %}
+
+
+  </body>
+</html>
